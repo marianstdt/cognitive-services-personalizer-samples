@@ -7,7 +7,7 @@
 }
 
 <div class="row">
-    <div class="col-lg-9">
+    <div class="col-12 col-lg-9">
         @{
             if (Model.Any())
             {
@@ -71,8 +71,8 @@
             }
         }
     </div>
-    <div class="col-lg-3 small_slot_wrapper">
-            <h5 class="font-weight-light pb-1">Latest Scores</h5>
+    <div class="col-12 col-lg-3 mt-3 mt-lg-0 small_slot_wrapper d-lg-flex flex-column justify-content-between">
+        <h5 class="font-weight-light">Latest Scores</h5>
 
             <table class="table table-sm mb-4 bg-light">
                 <tr>
@@ -133,14 +133,15 @@
             </table>
     </div>
 </div>
-<div class=" mt-2" id="container-latest-photos">
-    <label for="latest-photos" style="font-size: 2vw">Latest Photos</label>
-    <div class="row" id="latest-photos" style="filter: grayscale(100%)">
-        <div class="col-md-3">
-            <div class="card-deck">
-                <div class="card">
-                    <img src="~/img/latest-photos/photo1.jpg" class="card-img">
-                </div>
+
+<hr class="mt-5" />
+
+<div class="row py-2">
+    <div class="col-12">
+        <h5>Latest Photos</h5>
+        <div class="card-deck" style="filter: grayscale(100%)">
+            <div class="card">
+                <img src="~/img/latest-photos/photo1.jpg" class="card-img">
             </div>
         </div>
         <div class="col-md-3">
@@ -166,7 +167,45 @@
         </div>
     </div>
 </div>
-        <script>
+
+<hr class="mt-5" />
+
+<div class="row py-2">
+    <div class="col-12">
+
+        <h5>Other News</h5>
+        <div class="card-deck text-white" style="filter: grayscale(100%)">
+            <div class="card">
+                <img src="~/img/other-news/photo1.jpg" class="card-img">
+                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                    <p class="card-text">Serena battle-tested for Strycova showdown</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/img/other-news/photo2.jpg" class="card-img">
+                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                    <p class="card-text">Hsieh, Strycova soar past</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/img/other-news/photo3.jpg" class="card-img">
+                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                    <p class="card-text">Larsson keeps run going on home soil in Bastad</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/img/other-news/photo4.jpg" class="card-img">
+                <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+                    <p class="card-text">Doi delivers Krunic win in Bastad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const goBtnIframe = document.getElementById('go-btn-iframe');
         if (goBtnIframe) {
